@@ -18,3 +18,9 @@ Additional Nativescript Instructions can be found [here](https://docs.nativescri
 3) To run the web app version, run `ng serve -o` to launch the app. It will be running on `localhost:4200`.
 
 Note - The apps do not share data. They are two separate instances of the same application.
+
+## Slides
+
+The slides from the Angular Denver 2019 Conference are in the pdf called `ngDenver-Nativescript-Slides.pdf`
+
+Any questions? Feel free to message me on Twitter [@halpin_io](https://twitter.com/halpin_io/)
