@@ -1,0 +1,6 @@
+# NativeScript
+node_modules/
+platforms/
+hooks/
+src/**/*.js
+

@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": [
+          "src/*"
+      ],
+      "*": [
+        "./node_modules/tns-core-modules/*",
+        "./node_modules/*"
+      ]
+    }
+  },
+  /* 
+  Tell typescript to ignore the web application only files when compiling
+  If we try to build a mobile app with AOT, it will fail because Angular will try and find components
+  that it thinks it needs (but doesn't because they are web)
+  */
+   "exclude": [
+    "**/*.tns.ts",
+    "**/*.android.ts",
+    "**/*.ios.ts",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,32 @@
+
+
+<GridLayout rows="auto, auto, *">
+  <Label row="0" text="Top Heroes" class="header"></Label>
+
+  <StackLayout row="1">
+    <app-hero-search row="1"></app-hero-search>
+  </StackLayout>
+
+  <FlexboxLayout row="2">
+    <StackLayout *ngFor="let hero of heroes" class="hero-container" nsRouterLink="/detail/{{hero.id}}">
+      <StackLayout class="circle">
+        <Label [text]="hero.id"></Label>
+      </StackLayout>
+      <Label class="name" [text]="hero.name"></Label>
+    </StackLayout>
+  </FlexboxLayout>
+
+</GridLayout>
+
+
+<!-- <h3>Top Heroes</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let hero of heroes" class="col-1-4"
+      routerLink="/detail/{{hero.id}}">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-hero-search></app-hero-search> -->

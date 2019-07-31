@@ -1,0 +1,22 @@
+/*
+Add your NativeScript specific styles here.
+To learn more about styling in NativeScript see:
+https://docs.nativescript.org/angular/ui/styling
+*/
+
+.circle{
+    background: brown;
+    border-radius: 50%;
+    display: inline-block;
+    height:50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.name{
+    background: orange;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 10px;
+}
